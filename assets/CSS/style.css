@@ -16,13 +16,6 @@
     position: fixed;
     top: 0%;
     display: flex;
-    /*désolé mais mon ancienne nav était à chier donc je suis retournée au flex
-    mais j'ai laissé l'historique dans le dossier recherche
-    (je voulais un beau rendu quand même)
-    purée j'avais sauvegarde et en faisant le tri j'ai du supprimer le fichier css !!!
-    ca m agace je voulais que vous voyez la prograssion et mes notes de début !!!
-    mais si vous voulez que je vous explique ce qui avait ete fait avant
-    n'hesitez pas à me renvoyer un mail*/
     width: 100%;
     height: 16vh;
     font-size: 24px;
@@ -78,7 +71,6 @@
         background-color: #1efb51;
         background-image: none;
         cursor: pointer;
-        /*parce que la petite main ça fait plus beau*/
     }
 
     button{
@@ -173,15 +165,12 @@
         }
 
         /*code slide*/
-        /*desolé j'avais trop de mal avec 
-        le js pour le carousel du coup
-        j'ai regardé pour le faire en css*/
 
         #slider {
             overflow: hidden;
             height: 70vh;
             /*vos vh changent la vie lol pour les mediaquerys*/
-            /*de ce que je comprend ça cache ce qui déborde
+            /*hidden cache ce qui déborde
             du champs defini d'une page (ajoute un bord blanc)*/
         }
         #slider figure {
@@ -197,7 +186,7 @@
             width: 50%;
             /*si j'en avais eu 5 j'aurais mis 20%*/
             float: left;
-            /*dégage le petit bout d'image dégueulasse
+            /*dégage le petit bout d'image
             du coté droit.*/
         }
 
@@ -230,10 +219,7 @@
             }
             /*comme on s'en doute on reprend la position 0
             DONC mon effet ce fait bien je suis contente d'avoir
-            compris ça voici le tuto que j'ai suivi pour
-            comprendre le systeme et que je trouve tres bien 
-            et que j'ai réadaptée à ma sauce disons !
-            : https://www.youtube.com/watch?v=pGHOaY4dhAA*/
+            compris ça
         }
 
         /*fin de code slide*/
@@ -296,7 +282,6 @@
             font-weight: bold;
             background-image: none;
             cursor: pointer;
-            /*parce que la petite main ça fait plus beau*/
         }
 
         
@@ -438,9 +423,6 @@
                 transform: translateX(70%) scale(.8);
                 z-index: 3;
               }
-            /*Alors ! maintenant que je sais pourquoi mon carrousel marchait pas sur ma page d'accueil je vais m'amuser lol*/
-            /*par contre je suis desolé c'est pas coherent les couleurs mais je laisse pour me rappeller de comment faire des
-            dégradés plus tard !*/
 
             /*style pages aricles*/
 
@@ -685,9 +667,6 @@
 
             #slider {
                 height: 50vh;
-                /*vos vh changent la vie lol pour les mediaquerys*/
-                /*de ce que je comprend ça cache ce qui déborde
-                du champs defini d'une page (ajoute un bord blanc)*/
             }
             #tablette{
                 display: block;

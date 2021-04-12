@@ -1,0 +1,217 @@
+ASCENZIO DE ESTEVE-MERTENS Lucie
+Thème : Application web (site responsive)
+pour un Professionnel de la reprogrammation de 
+moteur automobile avec une spécificitée supplémentaire : 
+systeme de reprogrammation pour utilisés 
+une nouvelle carburation appeler Bio Ethanol.
+
+Bonjour jérémy merci de prendre le temps de me lire.
+Dans le dossier ouvrez-moi tu trouveras l'intégralité
+de mon processus de création.
+
+        1.Dans le dossier jpg tu auras
+        un rapide aperçu de mon travail.
+        2.Dans le dossier brut tu pourras
+        consulter ce que j'ai fais avec l'outil photoshop
+        pour le styletiles et le zoning, 
+        tu trouveras aussi un documents texte
+        avec les liens vers les wireframes.
+        3.Dans le dossier recherches tu disposeras de la liste
+        des users stories que j'ai pu dresser.
+        Tu découvriras aussi ce que j'ai souhaité developper
+        dans les differents articles sous le formats word.
+        ainsi que mon brain storming
+
+liste des sites ou j'ai été piocher des choses :
+        - https://www.flaticon.com/
+        - https://emojipedia.org/
+        - https://www.pexels.com/
+        - https://www.mydevice.io/
+
+priorisation des users stories.
+meme si j'ai ecris faire une partie mention legale et politique de
+confidentialite je doute m'ennuyer à les
+rediger pas que je ne veux pas mais que je n en
+aurait probablement pas le temps.
+
+Aussi tu remarqueras que ma maquette
+pour le portage telephone ne correspond pas au premier
+jet pour une raison assez simple j'ai certainement été
+trop ambitieuse par rapport au temps que j'avais
+pour realiser mon travail. j'ai donc opté pour
+faire des cards plutot que de reflechir à un js pour
+arriver à ce que je voulais mais j'abandonne pas je 
+transformerai (pour m'exercer pour l'avenir)
+les titres en quelque chose de cliquable 
+(boutton surement) et afficher la card que je veux au click tel que de cette
+façon j'avais déjà fais ça pour des paragraphes :
+
+        <style>
+                .hide{
+                        display: none;
+                }
+        (je créer une classe qui va me permettre
+        de cacher ce que je veux plus tard quand
+        je ferais mes commandes JS)
+        <style>
+
+        <section>
+                <div id="onglet">
+                <header>
+                    <button data-index="0">Accueil</button>
+                    <button data-index="1">Présentation</button>
+                    <button data-index="2">Nous contacter</button>
+                </header>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem blanditiis, pariatur eum suscipit quos? Quibusdam sequi natus saepe aspernatur voluptas? Aliquid, ipsa numquam. Nulla accusamus blanditiis aliquam officiis porro!</p>
+                    <p>Dicta ipsum cum fuga repudiandae debitis tempore voluptatum temporibus accusamus impedit, error reiciendis rerum, deleniti laudantium pariatur nam amet explicabo et corporis ducimus provident odit, voluptates ipsa? Doloribus, earum consequuntur!</p>
+                    <p>Est animi repellendus reiciendis voluptatum qui ea minima praesentium autem, nostrum laboriosam ad architecto quae rerum sint enim modi cum beatae exercitationem recusandae, at voluptas, nulla a unde quis! Eos?</p>
+                </div>
+                </div>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+                $("#onglet p").hide().first().show();
+
+        (je dis à tt mes p de se cacher
+        (je leurs colle ma classe hide de plus tot)
+        et je demande au premier d'adopter la classe show)
+
+                $("#onglet button").click(function(){
+                let index = $(this).data("index");
+                $("#onglet p").hide().eq(index).show();
+                });
+
+        (ici je dis que si je clique sur un bouton dans ce qui porte
+        l'id onglet alors j'appelle la fonction suivante :
+        je declare une variable index et dans moi meme 
+        (enfin lui c est this) je vais chercher la donnée index
+        apres ca je commande à tout mes paragraphes de se
+        cacher en leur affectant la classe hide puis demande
+        à celui qui correspond à la variable index déterminée juste
+        avant de se montrer)
+        </script>
+
+Voila tu connais ce qu'était mon plan de base mais
+c'est vrai que c'est peut etre pas optimal en
+terme d'UX car moins l'utilisateur à à cliquer mieux
+c'est ! donc c'est pas plus mal que j'ai adapté ça
+comme c'est le cas dans le produit fini
+
+j'ai eclaircit bg boutton avec photoshop ^^
+
+JEREMYYY PAR PITIE prend le temps de regarder mes medias querys
+elles sont à la fin dans le code CSS (format tablette et smartphone.)
+
+Pour des raisons pratique je ne me suis pas amusee à recreer les logos
+de reseaux sociaux et n'ayant pas illustrator faire un logo moi meme
+me semblait compromis c'est pourquoi j'ai choisi 2 logos dans le theme
+et que je les ai mixés ensembles grace à la magie photoshop !
+
+Aussi ! j'ai pensé mettre une barre de recherche
+mais le professeur de la semaine de php nous avait parlé
+des injection sql et je suppose que faire une barre de
+recherche fonctionne avec une bases de données (associer
+des mots à des directions ?) apres peut etre que je me
+trompe mais du coup j'ai préféré rester simple afin
+d'eviter un maximum de pb et des risques de sites qui
+pourrait plus facilement tomber down à cause de hackers
+malveillant (on est d'accord mon petit site les
+interesserait pas mais bon dans le principe vu que je ne
+sais pas non plus réaliser une barre de recherche
+"fonctionnelle" je m'en garde (mettre un input type="search" et un
+bouton n'a rien de compliqué en soit mais pour faire
+une vrai barre de recherche utile c'est pas la meme histoire je presume!)) 
+
+aussi j'aurai bien aimé faire une interfaces administrateur
+pour simplifier la vie de mon client et qu'il ai juste à
+faire mumuse avec une interface pour changer les
+article sans coder car le client n'a pas que ça à faire
+MAIS J'AURAI PAS LE TEMPS NON PLUS aie aie aie.
+
+je te remercie par avance pour le retour que tu me donneras
+vis a vis de mon travail car je suis en recherche constante
+d'amelioration et toute critique est evidemment la bienvenue.
+
+j'ai enfin fini ma page d'accueil yayyyy bon on est vendredi 22h55
+mais ca fait plaisir quand meme.
+vu que mon precédent n'était pas esthétique mais que j'ai compris
+le principe je me suis permise de m'inspirer d'un footer que j'ai
+evidemment pris le temps de regarder afin de bien le
+comprendre ! mais c'est juste pour que ce soit pas à vomir!
+https://www.youtube.com/watch?v=Kjf8EHY6kOo (j'y serais arrivée à faire un plus
+beau footer moi même je vais m'en donner le temps soyez en sure ^^)
+
+bon 2j pour les dernieres page !
+listing de ce qui est deja fini :
+        ✔️réaliser une application web ( site responsive).
+        ✔️User story definir les roles et action = fonctionnalites du site
+          (meme si pour la 1.0 je ne pourrais pas realiser 
+          toutes celles auxquels j'ai pensé)
+        ✔️Documentation technique sur l'études de la recherche graphique
+        ✔️Création du logo = raison de votre choix = force de proposition
+          dans un soucis de temps j'ai juste melanger 2 icones dans le theme
+          que j'ai pris sur flaticons et que j'ai mixé sur photoshop
+          (voir calque si joint)
+        ✔️Définir les différentes étapes de vos recherches : 
+                moodboard, j'ai modifié mon moodboard
+                comme vous aviez fait donc je n'ai plus la toute premiere
+                version car j'ai gardé mon style tile que vous trouverez dans le
+                dossier ci joint. 
+                style tiles, j'avais envie de quelque chose de brut
+                d'ou les textures qui ressortent dans le bouton connexion
+                mais aussi dans le fond (même si au final apres avoir vu
+                les resultats de certains camarades je me dis que c'est assez de
+                mauvais gout mais si je me pose en client pour moi meme bah je trouve
+                que c'est quelque chose (une identité) que peu de site presentent
+                je voulais aussi quelque chose de lumineux car je veux inspirer quelque
+                chose de positif aux clients de mon client ! une atmosphère plus "chaleureuse"
+                allant avec la photo de mon client (factice) je voulais aussi un peu de vert leger
+                car il y a un petit coté ecologique mais vu qu'on parle d'essence je voulais
+                un vert pas trop petant mais en meme temps rappelant la nature.)
+                wireframes.
+         ✔️Explication de votre charte graphique, couleurs, typo, adjectifs (au dessus vous en
+            avez une partie je detaillerais plus dans le doc word si j'en ai le temps).
+         ✔️la même feuille de style devra être partagée par les quatre documents et validé pas w3c.
+            pour l'instant tout va bien mais j'espere ne pas oublier de remplir les
+            balises d'accessibilité ! (aller voir dans jpg pour voir le screen qui fait foi)
+         ✔️Un déclenchement du menu burger devra etre realiser en js
+            toutes autres animation sera prise en compte.
+            pour le coup j'ai envie de dire que je l'ai fais deux fois !
+            une fois dans la version bac à sable degueulasse mais sur laquelle
+            j'ai le plus appris et ou il y a pleiiiiinnss de notes personnels
+
+j'ai mis une copie du formulaire dans le dossier database pour des raisons de praticitée pour vous car
+il vous sera plus aisé de lire avec le wampserveur !
+
+desolé monsieur j'ai essayé de me depecher pour rendre mon site accessible aux personnes en situation de handicap
+mais je n'ai pas eu le temps malheureusement !!!
+
+concernant les nouveaux wireframes je ne sait pas si j'aurais le temps de les realiser demain mais je vous ai explique pourquoi
+il ne se ressemble pas evidemment que face à un client je n'aurais pas lachée je vous l'assure !!!
+
+demain j'ai à completer le contenu et vous le ziper !
+
+BON dernieres heures pour un soucis de rapidite je ne vais pas faire apparaitre le contenu grace a du js mais utiliser des liens vers des pages html
+au passage aussi j aurais eu plus de temps j aurais fait le formulaire de connecion et d'inscription aussi.
+
+purée je suis contente d'en voir le bout j'ai mis en page que le premier et un bout de la deuxieme article html pour te montrer que je suis capable de le faire
+au global mon ressenti je suis plutot contente de moi j'ai reussi à completer la plupart des users stories que j'avais décrété au départ
+
+je regrete cependant de ne pas avoir eu le temps de faire bien les choses pour l'accesibilite (malvoyant) je n ai pas non plus fait de pages mention legales et politique de confidentialite
+par manque de temps aussi.
+
+je voulais revenir sur les wireframes mais j'avoue que j'ai tres mal a la tete et je suis à une heure de l'heure limite. Je pense que tu as vu que je suis capable d'en faire un
+meme si le produit fini ne correspond pas dans son entiertée à ce que je voulais au départ mais est assez proche quand même. (les cards ne sont pas cachés par des boutons et c'est pas plus
+mal en terme d'ux (experience utilisateur) d'ailleur en fin de compte c'est un mal pour un bien.
+il vaut mieux scroller que cliquer ! enfin à mon sens !)
+
+c'est avec plaisir cependant que je te rends mon travail avec quand même un peu de
+fierté de voir que ma formation à portée ses fruits.
+
+je te souhaite jeremy une excellente fin de week end et une bonne continuation.
+
+
+
+            

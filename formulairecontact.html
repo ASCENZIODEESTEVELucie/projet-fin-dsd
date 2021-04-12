@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco⚙️motors</title>
+    <!--Pour toujours plus de personnalisation-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+              <a href="./index.html"><img src="./assets/images/logo_impro-bg.png" alt=""></a>
+            </div>
+            <ul class="nav-links">
+                <li data-index="0" class="hover"><a href="./index.html">Accueil</a></li>
+                <li data-index="1" class="hover" id="sous-menu"><a href="./articles.html">Actualités</a>
+                    <ul>
+                         <li class="hover">Presentation</li>
+                         <li class="hover">Tous</li>
+                    </ul>
+                </li>
+                <li data-index="2" class="hover"><a href="#">Contact</a></li>
+                <li><button class="hoverbis">Inscription/Connexion</button></li>
+            </ul>
+            <div class="burger">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+          </nav>
+        </header>
+
+    <main>
+	<!--la balise form englobe le formulaire -->
+		<form action='connexionbasedonnees.php' method='POST'>
+				<legend>Formulaire de contact</legend>
+        <table>
+			<tr>
+				<td><label>Nom</label></td>
+				<td><input type='text' name='nom' id='nom' required></td>
+			</tr>
+            <tr>
+                <td><label>Prenom</label></td>
+				<td><input type='text' name='prenom' required></td>
+			</tr>
+
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type='email' name='email' required></td>
+			</tr>
+
+            <tr>
+                <td><label>Telephone</label></td>
+                <td><input type="number" name="num" id="num"></td>
+            </tr>
+			
+			<tr>
+				<td><label>Date</label></td>
+				<td><input type='date' name='date' required></td>
+			</tr>
+			
+			<tr>
+				<td><label>Votre auto</label></td>
+				<td><select name='cars'>
+					<option value='volvo'>Volvo</option>
+					<option value='saab'>Saab</option>
+					<option value='mercedes'>Mercedes</option>
+					<option value='audi'>Audi</option>
+					</select></td>
+            </tr>
+			
+            <tr>
+                <td><label>vos véhicules</label></td>
+				<td><input type='radio' name='genre' value='auto'>
+				<label>Auto</label></td>
+                <td><input type='radio' name='genre' value='autre'>
+                <label>Autre</label></td>
+            </tr>
+			
+			<tr>
+                <td><label>Commentaire</label></td>
+            </tr>
+            <tr>
+				<td><textarea cols='50' rows='6' name="infos" required placeholder="Veuillez renseigner l'heure du rdv.
+Si Autre preciser.(poids lourds...)
+Nous vous enverrons un mail
+de confirmation.
+Si vous n'avez pas de reponse sous 48H n'hésitez pas a nous appeler."></textarea></td>
+			</tr>
+			
+			<tr>
+                <td>
+                <button class="hoverbis" type='submit' name='submit'>envoyer</button>
+                <button class="hoverneg" type='reset' name='reset'>effacer</button>
+                </td>
+			</tr>
+		</table>
+		</form>
+
+    </main>
+    
+    <footer>
+
+        <div class="contenu-footer">
+    
+            <div class="bloc footer-services">
+                <h3>Nous trouver</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10506.596901482813!2d2.3083554983242625!3d48.826753887097546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6704cd35323c3%3A0xa940fd6664813641!2sTamsenServices!5e0!3m2!1sen!2sfr!4v1613159010551!5m2!1sen!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+    
+            <div class="bloc footer-contact">
+                <h3>Restons en contact</h3>
+                <p>01-07-02-95-36</p>
+                <p>supportclient@contact.com</p>
+                <p>28 Rue Louis Morard, 75014 Paris</p>
+            </div>
+    
+            <div class="bloc footer-horaires">
+                <h3>Les horaires</h3>
+                <ul class="liste-horaires">
+                    <li>✔️ Lun 10h-19h</li>
+                    <li>✔️ Mar 10h-19h</li>
+                    <li>✔️ Mer 10h-19h</li>
+                    <li>✔️ Jeu 10h-19h</li>
+                    <li>✔️ Ven 10h-19h</li>
+                    <li>❌ Sam fermé</li>
+                    <li>❌ Dim fermé</li>
+                </ul>
+            </div>
+    
+            <div class="bloc footer-medias">
+                <h3>Nos réseaux</h3>
+                <ul class="liste-media">
+                    <li><a href="https://www.facebook.com/">
+                      <img src="./assets/images/FB_By_Freepik.svg" alt="icones réseaux sociaux"></a></li>
+                    <li><a href="https://www.instagram.com/">
+                      <img src="./assets/images/instagram_By_Freepik.svg" alt="icones réseaux sociaux">
+                    </a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+    </footer>
+
+    <script src="./assets/JS/script.js"></script>
+   
+</body>
+</html>
